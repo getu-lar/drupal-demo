@@ -1,12 +1,12 @@
-[submodule "sites\\all\\modules\\core/coffee"]
-	path = sites\\all\\modules\\core/coffee
-	url = git://git.drupal.org/project/coffee.git
-[submodule "sites\\all\\modules\\core/ctools"]
-	path = sites\\all\\modules\\core/ctools
-	url = git://git.drupal.org/project/ctools.git
-[submodule "sites\\all\\modules\\core/views"]
-	path = sites\\all\\modules\\core/views
-	url = git://git.drupal.org/project/views.git
-[submodule "sites\\all\\modules\\core/panels"]
-	path = sites\\all\\modules\\core/panels
-	url = git://git.drupal.org/project/panels.git
+[submodule "sites/all/modules/core/coffee"]
+        path = sites/all/modules/core/coffee
+        url = git://git.drupal.org/project/coffee.git
+[submodule "sites/all/modules/core/ctools"]
+        path = sites/all/modules/core/ctools
+        url = git://git.drupal.org/project/ctools.git
+[submodule "sites/all/modules/core/views"]
+        path = sites/all/modules/core/views
+        url = git://git.drupal.org/project/views.git
+[submodule "sites/all/modules/core/panels"]
+        path = sites/all/modules/core/panels
+        url = git://git.drupal.org/project/panels.git

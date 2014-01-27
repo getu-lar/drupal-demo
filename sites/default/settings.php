@@ -565,3 +565,27 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
+
+$environments = array(
+    '/dev\.getunik\.net/' => 'stage'
+);
+
+$host = $_SERVER['SERVER_NAME'];
+$env = 'local';
+
+foreach ($environments as $hostExpr => $envName)
+{
+    if (preg_match($hostExpr, $host))
+    {
+        $env = $envName;
+        break;
+    }
+}
+
+define('ENVIRONMENT', $env);
+
+$file = dirname(__FILE__) . '/settings.' . ENVIRONMENT . '.inc';
+if (file_exists($file))
+{
+    include($file);
+}

@@ -241,6 +241,8 @@
         <?php print render($page['footer']); ?>
       </div> <!-- /#footer -->
     <?php endif; ?>
+    
+    <?php echo "Environment: " . ENVIRONMENT; ?>
 
   </div></div> <!-- /.section, /#footer-wrapper -->
 
